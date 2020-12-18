@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1a1796f2-0ee9-451c-b035-70f173b6d825" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1lYtDKnYIJsmyGPK03u1VZqdduj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="ts.external.directory.path" value="C:\Users\User\Desktop\a\coub\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\a\coub\custom-types" />
+    </key>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="529" y="224" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607788732563">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="529" y="224" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1607788732563" />
+    <state x="840" y="371" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608320689707">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="840" y="371" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1608320689706" />
+    <state x="805" y="316" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607787779391">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="805" y="316" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1607787779391" />
+    <state x="833" y="439" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1607787176402">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="833" y="439" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1160@0.0.1920.1160" timestamp="1607787176402" />
+    <state x="388" y="169" width="1375" height="801" key="DiffContextDialog" timestamp="1607787307011">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="388" y="169" width="1375" height="801" key="DiffContextDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1607787307011" />
+    <state x="855" y="324" key="FileChooserDialogImpl" timestamp="1607787181634">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="855" y="324" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1607787181634" />
+    <state x="570" y="216" key="SettingsEditor" timestamp="1607787391052">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="570" y="216" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1607787391052" />
+    <state x="738" y="288" width="672" height="678" key="search.everywhere.popup" timestamp="1608088509180">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="738" y="288" width="672" height="678" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1608088509180" />
+  </component>
+</project>

@@ -1,0 +1,124 @@
+.navigation {
+    height: calc(100vh - 75px);
+    margin-top: 5px;
+    padding: 5px;
+    width: 240px;
+    border-radius: 6px;
+    background-color: #0D1117;
+}
+
+.navigation-card-function {
+    border-radius: 6px;
+    background-color: #090D13;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    padding: 10px;
+}
+
+.navigation-card-function-label {
+    color: #58A6FF;
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navigation-card-function-link {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.navigation-card-function-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.navigation-card-function-link:last-child {
+    margin-bottom: 0;
+}
+
+.navigation-card-function-show-more {
+    border-radius: 6px;
+    background-color: #0f151f;
+    align-items: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: flex;
+    padding: 10px;
+    z-index: 10;
+    position: relative;
+    transition: 100ms;
+    box-shadow: 0 0 0 0 #4f81dd;
+}
+
+.navigation-card-function-show-more:hover {
+    box-shadow: 0 0 0 1px #4f81dd;
+}
+
+.navigation-card-function-show-more-label {
+    color: #73b6fd;
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navigation-more-functions {
+    margin-bottom: 5px;
+}
+
+.navigation-divider {
+    border-color: #579fee;
+    margin-bottom: 5px;
+}
+
+.navigation-label {
+    color: #B4D7FF;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navigation-label-container {
+    padding: 10px 0 10px 10px;
+}
+
+.navigation-card-community {
+    border-radius: 6px;
+    background-color: #090D13;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    padding: 5px;
+}
+
+.navigation-card-community-label {
+    color: #58A6FF;
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navigation-card-community-link {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.navigation-card-community-img {
+    height: 40px;
+    border-radius: 6px;
+    width: 40px;
+}
+
+.navigation-card-community-link:last-child {
+    margin-bottom: 0;
+}
+
+.navigation-scroll {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    width: 1px;
+    z-index: 999;
+    cursor: pointer;
+}
