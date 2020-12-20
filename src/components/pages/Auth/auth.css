@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.auth-login {
+    height: calc(100vh - 10px);
+    width: calc(100vw - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-login-form {
+    background-color: #161B22;
+    border-radius: 6px;
+    min-width: 400px;
+    padding: 5px;
+    position: absolute;
+}
+
+.auth-login-button {
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    border: none;
+    outline: none;
+    color: #58A6FF;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 10px 20px;
+    background-color: #1D2633;
+}
+
+.auth-login-desc {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #849dba;
+}
+
+.auth-login-logo {
+    height: 100px;
+    width: 100px;
+}
+
+.auth-login-logo-right {
+    margin-left: 15px;
+}
+
+.auth-login-dot {
+    width: 12px;
+    margin-left: 20px;
+    border-radius: 100px;
+    background-color: #58A6FF;
+    height: 12px;
+}
+
+.auth-login-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

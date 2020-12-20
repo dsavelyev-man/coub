@@ -39,6 +39,7 @@ module.exports = (env, argv) => {
             hot: true,
             open: true,
             historyApiFallback: true,
+            disableHostCheck: true,
         },
         resolve: config.resolve,
         module: {
