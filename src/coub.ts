@@ -4,5 +4,8 @@ const secretId = "547ccb4d313d5bd6579f9c3e396f651c6181c44e56c53ab16cee77cf43422c
 
 export default {
     authorizing: `http://coub.com/oauth/authorize?response_type=code&client_id=${clientId}&redirect_uri=${redirectAuth}`,
-    token: `http://coub.com/oauth/token?grant_type=authorization_code&client_id=${clientId}&redirect_uri=http://ya.ru:4200/auth&client_secret=${secretId}&code=`
+    token: `http://coub.com/oauth/token?grant_type=authorization_code&client_id=${clientId}&redirect_uri=http://ya.ru:4200/auth&client_secret=${secretId}&code=`,
+    clientId,
+    secretId,
+    redirectAuth
 }

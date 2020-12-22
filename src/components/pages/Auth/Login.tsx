@@ -23,7 +23,7 @@ export default function Login() {
                     <div className="auth-login-dot"/>
                     <img className="auth-login-logo auth-login-logo-right" src={coubLog} alt="coubLog"/>
                 </div>
-                <h3 className="auth-login-desc">Привяжите учетную запись coub что бы <br/>войти</h3>
+                <h3 className="auth-login-desc">Привяжите учетную запись <a className="auth-login-desc-coub" href="https://coub.com">coub</a> что бы <br/>войти</h3>
                 <a href={coub.authorizing}>
                     <animated.button
                         style={backgroundColor}

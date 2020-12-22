@@ -59,3 +59,10 @@
     justify-content: center;
     align-items: center;
 }
+
+.auth-login-desc-coub {
+    color: #FFFFFF;
+    padding: 4px;
+    border-radius: 6px;
+    background-color: #0332ff;
+}
