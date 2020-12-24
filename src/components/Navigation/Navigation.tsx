@@ -46,7 +46,8 @@ export default function Navigation() {
         },
         to: {
             transform: "translateX(0)"
-        }
+        },
+        delay: 400
     });
     const moreFunctionsAnimation = useSpring({
         from: {

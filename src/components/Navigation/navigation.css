@@ -1,14 +1,15 @@
 .navigation {
-    height: calc(100vh - 75px);
+    height: calc(100vh - 70px);
     margin-top: 5px;
     padding: 5px;
-    width: 240px;
+    width: 300px;
     border-radius: 6px;
     background-color: #0D1117;
 }
 
 .navigation-card-function {
     border-radius: 6px;
+    margin: 0 10px 0 1px;
     background-color: #090D13;
     align-items: center;
     cursor: pointer;
@@ -42,7 +43,7 @@
     border-radius: 6px;
     background-color: #0f151f;
     align-items: center;
-    margin-bottom: 5px;
+    margin: 0 10px 0 1px;
     cursor: pointer;
     display: flex;
     padding: 10px;
@@ -85,6 +86,7 @@
 
 .navigation-card-community {
     border-radius: 6px;
+    margin: 0 10px 0 1px;
     background-color: #090D13;
     align-items: center;
     cursor: pointer;

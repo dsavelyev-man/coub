@@ -4,6 +4,7 @@ body {
     margin: 0;
     background-color: #06090F;
     padding: 5px 5px 0 5px;
+    overflow-x: hidden;
 }
 
 .main {
@@ -16,9 +17,14 @@ body {
 
 .content {
     display: flex;
+    width: 100%;
     flex-direction: column;
 }
 
 a {
     text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
 }

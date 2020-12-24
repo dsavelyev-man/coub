@@ -36,6 +36,8 @@
       <recent name="C:\OpenServer\domains\coub\backend\src\auth" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\coub\src\components\Navbar" />
+      <recent name="C:\OpenServer\domains\coub\backend" />
       <recent name="C:\Users\User\Desktop\a\coub\custom-types" />
     </key>
   </component>
@@ -53,6 +55,9 @@
       <workItem from="1608469416275" duration="4326000" />
       <workItem from="1608498516104" duration="5572000" />
       <workItem from="1608520150525" duration="4227000" />
+      <workItem from="1608688675204" duration="5998000" />
+      <workItem from="1608694737750" duration="22000" />
+      <workItem from="1608788991974" duration="35663000" />
     </task>
     <servers />
   </component>
@@ -64,10 +69,14 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="529" y="224" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1607788732563" />
-    <state x="840" y="371" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608326782666">
+    <state x="840" y="371" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608805840971">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="840" y="371" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1608326782666" />
+    <state x="840" y="371" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1608805840971" />
+    <state x="1027" y="446" key="#com.intellij.ide.util.MemberChooser" timestamp="1608807686904">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="1027" y="446" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1608807686904" />
     <state x="805" y="316" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607787779391">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -88,20 +97,17 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="570" y="216" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1608463008694" />
-    <state x="738" y="288" width="672" height="678" key="search.everywhere.popup" timestamp="1608522948857">
+    <state x="0" y="308" width="627" height="852" key="find.popup" timestamp="1608818876688">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="738" y="288" width="672" height="678" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1608522948857" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/Navigation/CardFunction.tsx</url>
-          <line>4</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="0" y="308" width="627" height="852" key="find.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1608818876688" />
+    <state x="878" y="348" key="run.anything.popup" timestamp="1608812082124">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="878" y="348" key="run.anything.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1608812082124" />
+    <state x="738" y="288" width="672" height="678" key="search.everywhere.popup" timestamp="1608817421735">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="738" y="288" width="672" height="678" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1608817421735" />
   </component>
 </project>

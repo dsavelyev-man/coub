@@ -1,0 +1,121 @@
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+    height: 50px;
+    border-radius: 6px;
+    background-color: #161B22;
+    display: flex;
+    font-weight: bold;
+    font-size: 16px;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 5px;
+}
+
+.navbar-name {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8FC4FF;
+}
+
+.navbar-search {
+    height: 25px;
+    width: 400px;
+    outline: none;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: #0D1117;
+    border-radius: 6px;
+    border: 1px solid #21262D;
+    max-width: 400px;
+    color: #B4D7FF;
+    font-weight: normal;
+    font-size: 14px;
+    margin-left: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-search::placeholder {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-avatar {
+    margin-left: auto;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 40px;
+    overflow: hidden;
+    width: 40px;
+    background-color: #080809;
+}
+
+.navbar-avatar:hover {
+    box-shadow: 0 0 0 2px #4f81dd;
+}
+
+.navbar-avatar:active {
+    box-shadow: 0 0 0 2px #4f81dd;
+}
+
+.navbar-avatar-img {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar-dropdown {
+    padding: 5px;
+    width: 180px;
+    border-radius: 6px;
+    background-color: #161B22;
+    height: 0;
+    opacity: 0;
+    transform: translate(calc(100% + 10px) 100%);
+}
+
+.navbar-dropdown-hide {
+    transform: translate(calc(100% + 10px) 100%);
+    animation: 0.2s navbar-dropdown-hide forwards;
+}
+
+.navbar-dropdown-show {
+    height: 100%;
+    opacity: 1;
+    transform: translateX(5px);
+    animation: 0.2s navbar-dropdown-show forwards;
+}
+
+@keyframes navbar-dropdown-show {
+    0% {
+        transform: translateX(100%);
+
+    }
+    100% {
+        transform: translateX(5px);
+    }
+}
+
+.navbar-dropdown-fn {
+    padding: 10px;
+    background-color: #090D13;
+    font-family: 'Montserrat', sans-serif;
+    color: #58A6FF;
+    border-radius: 6px;
+    transition: 200ms;
+}
+
+.navbar-dropdown-fn-wrapper {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.navbar-dropdown-fn-wrapper:last-child {
+    margin-bottom: 0;
+}
+
+.navbar-dropdown-fn:hover {
+    background-color: #1D2633;
+}

@@ -1,7 +1,8 @@
 import React from "react";
 import Navbar from "../../../Navbar/Navbar";
 import Navigation from "../../../Navigation/Navigation";
-import {Motion, spring} from "react-motion";
+import { Switch, Route } from "react-router-dom";
+import Profile from "../../Profile/profile/Profile";
 
 export default function Main() {
     return (
@@ -10,18 +11,9 @@ export default function Main() {
             <div className="main">
                 <Navigation/>
                 <div className="content">
-                    <Motion defaultStyle={{x: 0}} style={{x:spring(10, {stiffness: 210, damping: 100})}}
-                    >
-                        {
-                            value => (
-                                <div className="test" style={{ transform: `translateX(${value.x * 10}px)`}}>
-                                    {
-                                        value.x
-                                    }
-                                </div>
-                            )
-                        }
-                    </Motion>
+                    <Switch>
+                        <Route path="/users/:permalink" component={Profile}/>
+                    </Switch>
                 </div>
             </div>
         </React.Fragment>

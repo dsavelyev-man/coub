@@ -1,7 +1,11 @@
 import React from "react";
 import "../common/styles/app.css"
-import Router from "./Router";
+import { Provider } from "react-redux";
+import {store} from "../store/store";
+import Loader from "./Loader";
 
 export default function App() {
-    return <Router/>
+    return <Provider store={store}>
+        <Loader/>
+    </Provider>
 }
