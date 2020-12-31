@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useLayoutEffect} from "react";
 import "./navigation.css";
 import CardFunction from "./CardFunction";
 import Home from "../../common/icons/home.svg";
@@ -36,6 +36,7 @@ import Community from "./Сommunity";
 
 export default function Navigation() {
     const [limitFunctions, setLimitFunctions] = useState(true);
+    const [hideNavigation, setHideNavigation] = useState(false);
     const iconSize = {
         width: 20,
         height: 20
@@ -197,8 +198,27 @@ export default function Navigation() {
     const mapFunctions = mapForFunctions.map(({icon, label, to}, idx) => <CardFunction to={to} key={idx} icon={icon} label={label}/>);
     const mapMoreFunctions = noLimitFunctions.map(({icon, label, to}, idx) => <CardFunction to={to} key={idx} icon={icon} label={label}/>);
 
+
+    function useWindowSize() {
+        const [size, setSize] = useState(0);
+        useLayoutEffect(() => {
+          function updateSize() {
+            setSize(window.innerWidth);
+          }
+          window.addEventListener('resize', updateSize);
+          updateSize();
+          return () => window.removeEventListener('resize', updateSize);
+        }, []);
+        return size;
+     }
+    
+      
+    if(hideNavigation) {
+        setHideNavigation(true)
+    }
+
     return (
-        <animated.div style={showAnimation} className="navigation">
+        <animated.div style={showAnimation} className={"navigation" + (useWindowSize() < 1220 ? " navigation-hide" : "")}>
             <Scrollbars
                 autoHide
                 renderThumbVertical={props => <div {...props} className="navigation-scroll"/>}

@@ -13,7 +13,7 @@ interface Props extends reducersState {
 }
 
 function Router(props: Props) {
-    let auth = !!getToken();
+    let auth = getToken();
     return (
         <BrowserRouter>
             <Switch>

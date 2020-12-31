@@ -31,18 +31,23 @@ function Dropdown(props: Props) {
         setTimeout(forceUpdate, 200)
     });
 
+    let currentPermalink = "";
+
+    if(props.user.user.current_channel) {
+        currentPermalink = props.user.user.current_channel.permalink
+    }
     const dropdown = (
         <div style={styles.popper} {...attributes.popper} ref={dropdownRef}>
             <div className={classes} ref={props.dropdownParentRef}>
                 <NavLink
-                    to={`/users/${props.user.user.current_channel.permalink}`}
+                    to={`/users/${currentPermalink}`}
                     className="navbar-dropdown-fn-wrapper"
                 >
                     <div className="navbar-dropdown-fn">
                         <label className="navbar-dropdown-fn-label">Профиль</label>
                     </div>
                 </NavLink>
-                <NavLink to={`/users/${props.user.user.current_channel.permalink}/edit`} className="navbar-dropdown-fn-wrapper">
+                <NavLink to={`/users/${currentPermalink}/edit`} className="navbar-dropdown-fn-wrapper">
                     <div className="navbar-dropdown-fn">
                         <label className="navbar-dropdown-fn-label">Настройки</label>
                     </div>

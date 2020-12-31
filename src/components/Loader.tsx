@@ -18,10 +18,12 @@ function Loader(props: Props) {
 
     console.log(props);
     useEffect(() => {
-        if(!props.user.auth) {
+        if(!props.user.testAuth && getToken()) {
             getUser()
+        } else if(!props.user.auth) {
+            dispatch(getUserAction({}, true, false))
         }
-    });
+    }, [props.user]);
 
     async function getUser() {
         await Axios.get(coub.url + "/api/v2/users/me", {
@@ -29,7 +31,7 @@ function Loader(props: Props) {
                 access_token: getToken()
             }
         }).then((r) => {
-            dispatch(getUserAction(r.data))
+            dispatch(getUserAction(r.data, true, true))
         });
     }
 

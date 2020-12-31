@@ -1,75 +1,48 @@
-import React, {useEffect, useReducer, useState} from "react";
+import React, {useEffect, useState} from "react";
 import { connect } from "react-redux";
 import {reducersState} from "../../../../store/store";
 import "./profile.css";
 import Axios from "axios";
 import coub from "../../../../coub";
 import {animated, useSpring} from "react-spring";
+import { useParams } from "react-router-dom";
 
 interface Props extends reducersState{
 }
 
-const initialState = {
-    param: window.location.href.slice((coub.myUrl + "users/").length + 1)
-};
-
-function paramReducer(state: any, action: { type: string; payload: any; }) {
-    switch (action.type) {
-        case 'change':
-            console.log(action)
-            return action.payload;
-        default:
-            throw Error
-    }
-}
-
 function Profile(props: Props) {
     const [channel, setChannel]: any = useState({get: false, user: {}});
-    const [param, setParam]:any = useReducer(paramReducer, initialState);
-    const [changeParam, setChangeParam] = useState(false);
-
+    const params: {permalink: string} = useParams();
     const [{ transform }, setShowAnimation] = useSpring(() => ({
         transform: "translateX(150%)",
-        onRest: () => {
-            if(changeParam) {
-                setParam({ type: "change", payload: { param: window.location.href.slice((coub.myUrl + "users/").length + 1)}})
-                setChangeParam(false);
-                setChannel({get: false, user: {}});
-            }
-        }
     }));
+    const [videoUrl, setVideoUrl] = useState("");
 
     useEffect(() => {
-        console.log(param)
         if(!channel.get) {
             getUser().then(r => {
                 setChannel({get: true, user: r.data});
                 setShowAnimation({ transform: "translateX(0%)", })
             })
         } else {
-            if(param.param !== window.location.href.slice((coub.myUrl + "users/").length + 1)) {
-                console.log(changeParam)
-                setChangeParam( true);
+            if(params.permalink !== window.location.href.slice((coub.myUrl + "users/").length + 1)) {
+    
                 setShowAnimation({ transform: "translateX(150%)" });
             }
-        }
-        if(false) {
-            setParam('aa')
         }
     });
 
     async function getUser() {
-        return await Axios.get(`${coub.url}/api/v2/channels/${param.param}`)
+        return await Axios.get(`${coub.url}/api/v2/channels/${params.permalink}`)
     }
 
     let avatarUrl = "";
-    let videoUrl = "";
     let nickname = "";
 
     if(channel.get) {
         avatarUrl = channel.user.avatar_versions.template.replace("%{version}", "profile_pic");
-        if(channel.user.background_coub) {
-            videoUrl = channel.user.background_coub.file_versions.html5.video.high.url;
+        if(channel.user.background_coub, !videoUrl) {
+            setVideoUrl(channel.user.background_coub.file_versions.html5.video.high.url);
         }
         nickname = channel.user.title
     }

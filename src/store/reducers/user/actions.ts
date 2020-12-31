@@ -1,10 +1,7 @@
 
-export function getUserAction(action: object) {
+export function getUserAction(show: boolean) {
     return {
-        type: "PUT_USER",
-        payload: {
-            auth: true,
-            user: action
-        }
+        type: "CHANGE",
+        payload: show
     }
 };

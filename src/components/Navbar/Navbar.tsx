@@ -26,7 +26,7 @@ function Navbar(props: Props) {
 
     let avatarUrl = "";
 
-    if(props.user.user) {
+    if(props.user.user && props.user.user.current_channel) {
         const avatarTemplate = props.user.user.current_channel.avatar_versions.template;
         avatarUrl = avatarTemplate.replace("%{version}", "profile_pic")
     }

@@ -2,7 +2,7 @@
     height: calc(100vh - 70px);
     margin-top: 5px;
     padding: 5px;
-    width: 300px;
+    width: 220px;
     border-radius: 6px;
     background-color: #0D1117;
 }
@@ -123,4 +123,8 @@
     width: 1px;
     z-index: 999;
     cursor: pointer;
+}
+
+.navigation-hide {
+    display: none;
 }
